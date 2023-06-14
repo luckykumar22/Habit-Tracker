@@ -1,31 +1,26 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-const HabitSchema = new mongoose.Schema(
-  {
+const HabitSchema = new mongoose.Schema({
     content: {
-      type: String,
-      required: true,
+        type: String,
+        required: true
     },
     email: {
-      type: String,
-      required: true,
+        type: String,
+        required: true
     },
-    dates: [
-      {
+    dates: [{
         date: String,
-        complete: String,
-      },
-    ],
+        complete: String
+    }],
     favorite: {
-      type: boolean,
-      default: false,
-    },
-  },
-  {
-    timestamps: true,
-  }
-);
+        type: Boolean,
+        default: false
+    }
+}, {
+    timestamps: true
+});
 
-const Habit = mongoose.model("Habit", HabitSchema);
+const Habit = mongoose.model('Habit', HabitSchema);
 
 module.exports = Habit;
