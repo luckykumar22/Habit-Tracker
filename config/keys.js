@@ -1,3 +1,3 @@
 module.exports = {
-    MongoURI: 'mongodb://127.0.0.1/habit_tracker'    
+    MongoURI: 'mongodb+srv://admin22:tabtab123@cluster0.9mlsgec.mongodb.net/habit_tracker?retryWrites=true&w=majority'    
 }
